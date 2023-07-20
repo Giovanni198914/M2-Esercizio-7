@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take your career!</title>
+</head>
+<style>
+    body {
+        background-image: url(./background\ photo.png.jpeg);
+        background-size: cover;
+        font-size: 15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+    }
+
+    h1 {
+        margin-bottom: 50px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    input {
+        width: 250px;
+        height: 50px;
+        border-radius: 24em;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    input:placeholder-shown {
+        font-style: italic;
+    }
+
+    button {
+        border-radius: 25em;
+        width: 145px;
+        height: 50px;
+        font-size: 18px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #B5B9D6;
+    }
+
+    #results {
+        list-style-type: '➥';
+    }
+</style>
+</head>
+
+<body>
+<section>
+    <h1>Your Career Your Job!</h1>
+    <input id="titleQuery" type="search" placeholder="Enter a job position"> <br>
+    <input id="locationQuery" type="search" placeholder="Enter your location"> <br>
+    <div>
+        <button onclick="doSearch()"> Search</button>
+        <button onclick="cancelButton();"> Cancel</button>
+    </div>
+    <ul id="results"> </ul>
+</section>
+<script src="Esercizio-7.js"></script>
+</body>
+
+</html>
